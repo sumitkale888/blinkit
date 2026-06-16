@@ -1,8 +1,10 @@
+import React, { FC } from 'react';
 import { Colors, Fonts } from '@utils/Constants';
-import { FC } from 'react';
 import { StyleSheet, TouchableOpacity, View, TextInput } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import Icon from 'react-native-vector-icons/Ionicons';
+
+const IconComponent: any = Icon;
 
 interface InputProps {
     left?: React.ReactNode
@@ -37,7 +39,7 @@ const CustomInput: FC<InputProps & React.ComponentProps<typeof TextInput>> = ({
 
 
                     <TouchableOpacity onPress={onClear}>
-                        <Icon
+                        <IconComponent
                             name="close-circle-sharp"
                             size={RFValue(16)}
                             color="#ccc"

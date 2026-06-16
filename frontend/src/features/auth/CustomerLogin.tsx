@@ -192,6 +192,12 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginVertical: 10,
     },
+    linkContainer: {
+        marginTop: 16,
+    },
+    linkText: {
+        color: Colors.primary,
+    },
 });
 
 export default CustomerLogin;
